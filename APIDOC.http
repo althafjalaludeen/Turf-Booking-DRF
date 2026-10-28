@@ -1,0 +1,114 @@
+
+### Get All Turfs
+GET http://127.0.0.1:8000/turfs/
+Accept: application/json
+
+
+### Add Turf 1
+POST http://127.0.0.1:8000/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Green Arena",
+    "location": "Thiruvalla",
+    "surface_type": "Artificial Grass",
+    "price_per_hour": 1200,
+    "available": true
+}
+
+
+### Add Turf 2
+POST http://127.0.0.1:8000/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Sports Hub",
+    "location": "Changanassery",
+    "surface_type": "Natural Grass",
+    "price_per_hour": 1500,
+    "available": true
+}
+
+
+### Add Turf 3
+POST http://127.0.0.1:8000/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Kick Off Arena",
+    "location": "Kottayam",
+    "surface_type": "Artificial Grass",
+    "price_per_hour": 1000,
+    "available": true
+}
+
+
+### Get Turf by ID
+GEThttp://127.0.0.1:8000/turfs/1/
+Accept: application/json
+
+
+### Update Turf by ID
+PUT http://127.0.0.1:8000/turfs/1/
+Content-Type: application/json
+
+{
+    "turf_name": "Green Arena Premium",
+    "location": "Thiruvalla",
+    "surface_type": "Artificial Grass",
+    "price_per_hour": 1400,
+    "available": true
+}
+
+
+### Delete Turf by ID
+DELETE http://127.0.0.1:8000/turfs/3/
+Content-Type: application/json
+
+
+### Get All Bookings
+GET http://127.0.0.1:8000/bookings/
+Accept: application/json
+
+
+### Add Booking 1
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+{
+    "customer_name": "Aswin Gopinath",
+    "phone": "9876543210",
+    "turf_id": 1,
+    "booking_date": "2026-11-05",
+    "start_time": "18:00:00",
+    "duration_hours": 2
+}
+
+
+### Add Booking 2
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+{
+    "customer_name": "Anjali Menon",
+    "phone": "9876501234",
+    "turf_id": 2,
+    "booking_date": "2026-11-06",
+    "start_time": "19:00:00",
+    "duration_hours": 1
+}
+
+
+### Add Booking 3
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+{
+    "customer_name": "Rahul Nair",
+    "phone": "9895012345",
+    "turf_id": 1,
+    "booking_date": "2026-11-07",
+    "start_time": "16:00:00",
+    "duration_hours": 3
+}
+
